@@ -1,6 +1,6 @@
 # SQLAlchemy - Managing Connections
 
-	Managing your connections to a database is an important task to avoid to exceed the maximum permitted by the database you are using. Below you can read some concepts and the way to do manage the number of connections in SQLAlchemy.
+Managing your connections to a database is an important task to avoid to exceed the maximum permitted by the database you are using. Below you can read some concepts and the way to do manage the number of connections in SQLAlchemy.
 	
 
 ## The Engine
