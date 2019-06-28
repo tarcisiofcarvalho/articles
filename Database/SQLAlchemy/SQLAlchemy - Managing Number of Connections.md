@@ -3,10 +3,6 @@
 Managing your connections to a database is an important task to avoid to exceed the maximum permitted by the database you are using. Below you can read some concepts and the way to do manage the number of connections in SQLAlchemy.
 	
 
-## The Engine
-
-## The Connection Pool
-
 ### Closing the session
 
 After you request all database operations related to your scope of operations, you can close the session. 
