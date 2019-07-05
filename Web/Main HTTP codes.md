@@ -7,4 +7,5 @@ After all HTTP transactions the client receives a HTTP code that means the trans
 *	**400**: You didn't send the required data the resource expects, then *Bad request*
 *   **401**: Your are not authorized to use this resource
 *   **404**: The resource you have requested was not found
+*   **405**: You are using a Method as POST that are not supported by the resource
 *   **500**: Something went wrong on server side
