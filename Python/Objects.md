@@ -26,3 +26,6 @@ print id(x) # Will be created a new object, the current one was not changed
 print id(y) # The y identifier is pointing to the same int object that contains 10
 140677102993072
 ```
+### References
+
+https://medium.com/@meghamohan/mutable-and-immutable-side-of-python-c2145cf72747
