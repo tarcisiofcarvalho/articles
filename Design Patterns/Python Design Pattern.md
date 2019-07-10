@@ -46,7 +46,7 @@ Python "hasn't null pointer exceptions", however you can work with "null objects
 
 ### Constant Pattern
 
-Usually we use Caps Letter "NUMBER_OF_DAYS" for constants, but it is not a rule itself. The constant pattern in Python has the only the sense that the object itself is imutable, but the name can still ne reassigned. Example:
+Usually we use Caps Letter "NUMBER_OF_DAYS" for constants, but it is not a rule itself. The constant pattern in Python has the only the sense that the object itself is imutable, but the name can still be reassigned. Example:
 
 ```python
 January = 1 # calendar.py
@@ -58,6 +58,13 @@ calendar.January = 13
 # you can also delete the value
 del calendar.January
 ```
+You can use "_" underscore in the beginning of constant to say that is private
+
+```python
+_WARNING = 60
+```
+
+Also, it is a good practice to declare your constans in the top of you code, so it will help the code readability and maintenance.
 
 # References
 
