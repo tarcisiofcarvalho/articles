@@ -32,7 +32,7 @@ set_seed = _instance.set_seed
 
 ### Sentinel Object Pattern
 
-In programming, we have always to deal with exceptions, unexpected values, null and so on. A sentinel object has a value that can simplify your code, avoiding you to handle exceptions for common operations as a string not found in a search. For example, you can bring "-1" or "None"if the sub-string was not found in a string, instead of to raise an exception.
+In programming, we have always to deal with exceptions, unexpected values, null and so on. A sentinel object has a value that can simplify your code, avoiding you to handle exceptions for common operations as a string not found in a search. For example, you can bring "-1" or "None" if the substring was not found in a string, instead of to raise an exception.
 
 The sentinel pattern itself refers to object identity, not to the object value itself.
 
@@ -64,7 +64,10 @@ You can use "_" underscore in the beginning of constant to say that is private
 _WARNING = 60
 ```
 
-Also, it is a good practice to declare your constans in the top of you code, so it will help the code readability and maintenance.
+It is a good practice to declare your constans in the top of you code, so it will help the code readability and maintenance.
+
+Compiling expressions as regular expression as a module global will increase the processing costs in the compilation time, but can save effort on execution and development time.
+
 
 # References
 
