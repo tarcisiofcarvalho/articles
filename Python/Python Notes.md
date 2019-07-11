@@ -18,3 +18,9 @@ x = "Python Object"
 print id(x)
 200135852101020
 ```
+
+### Some Python Libs
+
+|lib/pkg|desc|
+|---|---|
+|pkgutil|utilities form import system, as files|
