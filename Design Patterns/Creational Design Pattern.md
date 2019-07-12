@@ -183,8 +183,71 @@ Sheep cloned = first.clone();
 ```
 ### Builder Pattern
 
+The Builder Pattern says to construct complex objects using simple objects with step-by-step approach instead of many construction parameters where you can loose the control and code redability. It is known as telescoping constructor anti-pattern. See below:
+
+```java
+public Person(String name, String sex, int age, String profession, String status, Category category, Person child, Person parents)...
+```
+
+It is so long and you can loose the control, take a look doing the same thing with Builder Pattern
+
+```java
+public static class Builder{
+	private String name;
+	private String sex;
+	private int age;
+	private String profession;
+	private String status;
+	private Category category;
+	private Person child;
+	private Person parents;
+
+	// You can customize the properties for construction
+	public Builder(String name, String sex){
+        if (name == null || sex == null) {
+          throw new IllegalArgumentException("You should specify the name and sex");
+        }
+        this.name = name;
+        this.sex = sex;
+	}
+
+    public Builder withAge(int age) {
+      this.age = age;
+      return this;
+    }
+	
+    public Builder withProfession(String profession) {
+      this.profession = profession;
+      return this;
+    }
+	
+    public Builder withStatus(String status) {
+      this.status = status;
+      return this;
+    }	
+	
+    public Builder withCategory(String category) {
+      this.category = category;
+      return this;
+    }	
+
+    public Builder withChild(Person child) {
+      this.child = child;
+      return this;
+    }	
+	
+    public Builder withParents(Person parents) {
+      this.parents = parents;
+      return this;
+    }				
+}
+```
+
+We can see that builder pattern simplify the object creation, if you need to add a property just call with... method then it will be added
+
 ### References
 
 http://www.buyya.com/254/Patterns/Factory-2pp.pdf
 https://www.javatpoint.com/abstract-factory-pattern
 https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
+https://java-design-patterns.com/
