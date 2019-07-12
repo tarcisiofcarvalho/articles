@@ -1,7 +1,5 @@
 # Creational Design Pattern
 
-(It is under construction)
-
 The creational design pattern provides a way to **create object** in a good way, avoiding to instantiate them directly using **new** keyword as example.
 
 Please see below main creational design pattern.
