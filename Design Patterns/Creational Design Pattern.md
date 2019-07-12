@@ -125,6 +125,35 @@ public class CarFactory extends AbstractFactory{
 
 ### Singleton Pattern
 
+The Singleton Pattern deals with a single object, that is instantiate just once and can be used in overall application. The common use of this pattern is in logging, database, connections objects where you can avoid to create many instances of an object and need to keep the control as well.
+
+*   Single Object
+```java
+public class SingleObject{
+	
+	private static SingleObject instance = new SingleObject();
+	private SingleObject(){}
+	
+	public static SingleObjectc getInstance(){
+		return instance;
+	}
+	
+}
+```
+Notice that it hasn't a public constructor, so it will be instantiated once in earlier bind and can be called by the **getInstance** method.
+
+To access the object you should use the command below that won't deal with "new" keyword, just get the object already instantiated
+
+```java
+  SingleObject object = SingleObject.getInstance();
+```
+
 ### Prototype Pattern
 
 ### Builder Pattern
+
+### References
+
+http://www.buyya.com/254/Patterns/Factory-2pp.pdf
+https://www.javatpoint.com/abstract-factory-pattern
+https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
