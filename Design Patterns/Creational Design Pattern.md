@@ -245,7 +245,7 @@ We can see that builder pattern simplify the object creation, if you need to add
 
 ### References
 
-[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](http://www.buyya.com/254/Patterns/Factory-2pp.pdf)
-[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](https://www.javatpoint.com/abstract-factory-pattern)
-[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm)
-[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](https://java-design-patterns.com/)
+*	[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](http://www.buyya.com/254/Patterns/Factory-2pp.pdf)
+*	[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](https://www.javatpoint.com/abstract-factory-pattern)
+*	[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm)
+*	[http://www.buyya.com/254/Patterns/Factory-2pp.pdf](https://java-design-patterns.com/)
