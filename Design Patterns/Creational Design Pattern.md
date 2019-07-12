@@ -150,6 +150,37 @@ To access the object you should use the command below that won't deal with "new"
 
 ### Prototype Pattern
 
+The Prototype Pattern proposes to *clone* an object instead of instantiating a new when the the costs to instantiate is more expensive than to clone it.
+
+*	Lets create a class "Sheep" that can be clone, take a look in the override method *clone* and the implementation of *Clonable* interface
+```java
+public class Sheep implements Clonable{
+	
+	private String name;
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public Sheep(String name) { 
+		this.name = name; 
+	}
+	
+	@Override
+	public Sheep clone() throws CloneNotSupportedException{
+		return new Sheep(name);
+	}
+}
+```
+* You can call this clone in this way:
+
+```java
+// The first object instantiation
+Sheep first = new Sheep("First Sheep");
+	
+// It will be a new object cloned from the "first"
+Sheep cloned = first.clone(); 
+```
 ### Builder Pattern
 
 ### References
