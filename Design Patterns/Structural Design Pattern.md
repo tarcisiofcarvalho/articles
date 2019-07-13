@@ -37,7 +37,7 @@ public class CashPayment implements Payment{
 	
 	@Override
 	public void processing(){
-		payment.processing();
+	
 	}
 	
 }
