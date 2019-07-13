@@ -121,6 +121,12 @@ public class CarFactory extends AbstractFactory{
 }
 ```
 
+```java
+CarFactory carFactory = new CarFactory();
+carFactory.getCar("Ferrari");
+carFactory.getCar("Porsche");
+```
+
 ### Singleton Pattern
 
 The Singleton Pattern deals with a single object, that is instantiate just once and can be used in overall application. The common use of this pattern is in logging, database, connections objects where you can avoid to create many instances of an object and need to keep the control as well.
