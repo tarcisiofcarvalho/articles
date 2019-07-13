@@ -117,6 +117,62 @@ public class FacadeLetterInterface{
 FacadeLetterInterface facade = new FacadeLetterInterface();
 facade.processSteps();
 ```
+
+### Decorator Pattern
+
+The Decorator Pattern add responsibilities to individual objects dynamically and transparently, without affecting the object itself.
+
+![](../images/decorator.png)
+
+Let's see an example:
+
+```java
+public interface Payment{
+	
+	public void processPayment(){};
+	
+}
+
+public class CashPayment implements Payment{
+	
+	@Override
+	public void processPayment(){
+		System.out.println("Payment processing");
+	}
+	
+}
+
+public class CashPaymentAuthDecorator implements Payment{
+	
+	Payment decorated;
+	
+	public CashPaymentAuthDecorator(Payment decorated){
+		this.decorated = decorated;
+	}
+	
+	@Override
+	public void processPayment(){
+		if(this.authorized){
+			System.out.println("Payment Authorized");
+			this.decorated.processPayment();
+		}else{
+			System.out.println("Payment not authorized");
+		}
+
+	}
+	private boolean authorizated(){};
+}
+
+Payment cashPayment = new CashPayment();
+```
+
+```java
+// Let's decorate the cash payment
+Payment cashPaymentAuthorization = new CashPaymentAuthDecorator(cashPayment);
+
+cashPaymentAuthorization.processPayment();
+```
+
 ### References
 
 *	https://java-design-patterns.com
