@@ -117,3 +117,8 @@ public class FacadeLetterInterface{
 FacadeLetterInterface facade = new FacadeLetterInterface();
 facade.processSteps();
 ```
+### References
+
+*	https://java-design-patterns.com
+*	https://www.tutorialspoint.com/design_pattern/
+*	https://www.javatpoint.com/design-patterns-in-java
