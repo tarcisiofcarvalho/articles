@@ -75,6 +75,59 @@ public class Contractor extends Employee{
   }
 }
 ```
+#### Runtime polymorphism
+
+The runtime polymorphism uses the concept of upcasing where a reference declaration a class B uses its super class A. take a look:
+
+```java
+// It is the super class
+public class A{
+
+  void methodX(){};
+}
+
+// It is the sub class
+public class B extends A{
+
+  void methodX(){
+    System.out.println("Method overridden at runtime");
+  }
+}
+
+// Upcasting example class
+public class{
+
+  A temp = new B(); // It is the upcasting
+  temp.methodX(); 
+
+}
+```
+Since the temp refers to the subclass object and subclass method overrides the Parent class method, the subclass method is invoked at runtime, so Runtime polymorphism.
+
+### Abstraction
+
+Abstract hides the implementation and deal just with the functionalities. You can abstract a class from 0 to 100% using **class abstrac** or 100% using **interface**
+
+An abstract class can't be instantiated, it can have contructor and static methods, and final modifiers to force subclasses not override it.
+
+### Encapsulation
+
+Encapsulation hides the data using the private properties from a class, as a Java Bean model that follow getter and setters standard. See below a sample of encapsulation:
+
+```java
+public class Person{
+  private String name;
+
+  public void setName(String name){
+    this.name = name; // Here the "name" is encapsulated, you can do any validation before setting the name for example
+  }
+  
+  public String getName(){
+    return this.name; // Here the "name" is encapsulated, so you can perform any action here before to return the name
+  }
+  
+}
+```
 
 
 ### References
