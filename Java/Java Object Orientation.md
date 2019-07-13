@@ -52,6 +52,29 @@ Also, we can have a type promotion in the paremeters as example below:
 
 #### Override
 
+When a subclass provides a specific implementation method that has been declared in the super-class, it is the override. The override method should have the **same name** and the **same parameters** just the behavior will be changed. Take a look:
+
+```java
+public class Employee{
+
+  // It is the super class
+  private double salary;
+  
+  public void setSalary(double salary){
+    this.salary = salary; 
+  }
+}
+
+public class Contractor extends Employee{
+
+  // It is the sub class
+  private double salary;
+  
+  public void setSalary(double salary){
+    this.salary = salary * 0.85; // Fifteen percent of salary discount 
+  }
+}
+```
 
 
 ### References
