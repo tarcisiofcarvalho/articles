@@ -67,3 +67,53 @@ cashPayment.processing(); // Will print the credit card amount
 
 Facade Pattern deal with complex set of interfaces, trying to simplify with throught one interface.
 ![](../images/facade.png)
+
+Pleas take a look at example below. Imagine a set of steps you need to compose to execute the desired logic, however these steps are spread over many classes, so you can create a Facade Interface class that will simplify this:
+
+```java
+public class LetterA{
+	
+	public void step1(){};
+	
+}
+
+public class LetterB{
+	
+	public void step2(){};
+	
+}
+
+public class LetterC{
+	
+	public void step3(){};
+	
+}
+
+public class LetterD{
+	
+	public void step4(){};
+	
+}
+
+public class FacadeLetterInterface{
+	
+	public void processSteps(){
+		
+		LetterA a = new LetterA();
+		LetterB b = new LetterB();
+		LetterC c = new LetterC();
+		LetterD d = new LetterD();
+		a.step1();
+		b.step2();
+		c.step3();
+		d.step4();						
+		
+	}
+	
+}
+```
+
+```java
+FacadeLetterInterface facade = new FacadeLetterInterface();
+facade.processSteps();
+```
