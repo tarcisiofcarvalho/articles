@@ -36,4 +36,12 @@ There are many ORM options as:
 
 ### Architecture
 
+Let's see the basic communication:
+
 ![](../images/hibernate.png)
+
+Hibernate is the bridge between thoses worlds
+
+Now, let's see the architecture layer in details:
+
+![](../images/hibernate layer.png)
