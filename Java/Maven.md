@@ -1,4 +1,4 @@
-#### Check Maven version
+### Check Maven version
 
 ```sh
 mvn -v
