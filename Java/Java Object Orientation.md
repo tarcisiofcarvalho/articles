@@ -27,7 +27,7 @@ Inheritance is a mechanism one class (sub-class) extends the properties and beha
 
 ### Polymorphism
 
-The polymorphism can guve many forms to one single action. It is divided between compiled-time and runtime polymorphism. Let's see:
+The polymorphism can give many forms to one single action. It is divided between compiled-time and runtime polymorphism. Let's see:
 
 #### Overload
 
