@@ -45,3 +45,37 @@ Hibernate is the bridge between thoses worlds
 Now, let's see the architecture layer in details:
 
 ![](../images/hibernate_layer.png)
+
+Let's talk about main Hibernate objects
+
+#### Configuration Object
+
+The Configuration Object is instantiated just once when you start your application. It will load the Hibernate configuration from below setup files:
+
+* **hibernate.cfg.xml**: This file has the database connection definition that will be handle during hibernate start processing.
+* **hibernate.properties**: It is the same of hibernate.cfg.xml
+* **(classMappingSetup).xml**: These are the files with the mapping between application objects and database tables
+
+#### SessionFactory Object
+
+After configuration object loads configurations from files, it generates the **SessionFactory object** that is a heavyweight object, thread-safe, one per database.
+
+#### Session Object
+
+A session object is created each time you need a connection with the database, it is lightweight and is not thread-safe, so you should not be alive for long time. You should open a session and close it after each database iteraction needed. Persistent objects are saved and retrieved through a Session object.
+
+#### Transaction Object
+
+It represents a unit of work with the database. The transaction object is optional and the application may choose to manage it from their side.
+
+#### Query Object
+
+It uses the SQL (Structured Query Language) and HQL (Hibernate Query Language) 
+
+#### Criteria Object
+
+It is used to create object oriented criteria queries to retrieve objects.
+
+
+
+
