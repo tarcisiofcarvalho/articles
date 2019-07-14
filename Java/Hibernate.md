@@ -44,4 +44,4 @@ Hibernate is the bridge between thoses worlds
 
 Now, let's see the architecture layer in details:
 
-![](../images/hibernate layer.png)
+![](../images/hibernate_layer.png)
