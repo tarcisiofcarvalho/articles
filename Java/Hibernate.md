@@ -89,7 +89,7 @@ The Hibernate has many Java Libraries dependencies. If you are using Maven in yo
 </dependency>
 ```
 
-### Configuration 
+### Configuration file
 
 The first configuration is setup a config file. I will use the **hibernate.cfg.xml** file as below.
 
@@ -143,4 +143,35 @@ At the end of the config file we should define the mapping tags with the name of
 ```xml
 <mapping resource = "Persons.hbm.xml"/>
 ```
+
+### Mapping file
+
+Let's see how is a mapping file. 
+
+```xml
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Persons" table = "Persons">
+      
+      <meta attribute = "class-description">
+         This class contains the Persons details. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="autoincrement"/>
+      </id>
+      
+      <property name = "firstName" column = "first_name" type = "string"/>
+      <property name = "lastName" column = "last_name" type = "string"/>
+      
+   </class>
+</hibernate-mapping>
+```
+
+You should have the tag **class** with the name of you model object and table name as well. The **id** tag represents the object id and the table key. After, we have the properties that will map the object properties with table fields.
+
 
