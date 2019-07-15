@@ -16,3 +16,18 @@ CREATE TABLE Persons (
 INSERT INTO Persons (id, lastName, firstName, ...)
 VALUES (1, 'Carvalho', 'Tarcisio');
 ```
+
+### Update
+
+```sql
+UPDATE Persons
+SET lastName='Franco de Carvaho'
+WHERE id=1;
+```
+
+### Delete
+
+```sql
+DELETE FROM Persons 
+WHERE id=1;
+```
