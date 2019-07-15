@@ -127,6 +127,7 @@ The first configuration is setup a config file. I will use the **hibernate.cfg.x
    </session-factory>
 </hibernate-configuration>
 ```
+### Mapping file
 
 Let's see about those parameters:
 
@@ -162,7 +163,7 @@ Let's see how is a mapping file.
       </meta>
       
       <id name = "id" type = "int" column = "id">
-         <generator class="autoincrement"/>
+         <generator class="native"/>
       </id>
       
       <property name = "firstName" column = "first_name" type = "string"/>
@@ -174,4 +175,68 @@ Let's see how is a mapping file.
 
 You should have the tag **class** with the name of you model object and table name as well. The **id** tag represents the object id and the table key. After, we have the properties that will map the object properties with table fields.
 
+### Object Model
+
+Let's create a POJO object that will be mapped to Persons table.
+
+```java
+package com.javasample.dao;
+
+public class Persons {
+
+	private int id;
+	private String firstName;
+	private String lastName;
+	
+	public Persons(int id, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
+	public Persons() {
+		
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+}
+
+```
+
+### Application
+
+Let's see an application in details:
+
+#### Starting the SessionFactory
+
+```java
+
+  private static SessionFactory factory;
+  
+  try{
+    factory = new Configuration().configure().buildSessionFactory();
+  }catch(Throwable ex){
+    System.err.println("Failed to create sessionFactory object." + ex);
+    throw new ExceptionInInitializerError(ex);
+  }
+
+```
 
