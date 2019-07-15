@@ -13,7 +13,7 @@ CREATE TABLE Persons (
 ### Insert
 
 ```sql
-INSERT INTO Persons (id, lastName, firstName, ...)
+INSERT INTO Persons (id, lastName, firstName)
 VALUES (1, 'Carvalho', 'Tarcisio');
 ```
 
