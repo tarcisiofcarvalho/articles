@@ -127,7 +127,6 @@ The first configuration is setup a config file. I will use the **hibernate.cfg.x
    </session-factory>
 </hibernate-configuration>
 ```
-### Mapping file
 
 Let's see about those parameters:
 
