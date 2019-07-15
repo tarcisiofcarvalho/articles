@@ -76,6 +76,71 @@ It uses the SQL (Structured Query Language) and HQL (Hibernate Query Language)
 
 It is used to create object oriented criteria queries to retrieve objects.
 
+### Environment
 
+The Hibernate has many Java Libraries dependencies. If you are using Maven in your project you can add the dependency below to work with Hibernate 5.4.3
 
+```xml
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-agroal</artifactId>
+  <version>5.4.3.Final</version>
+  <type>pom</type>
+</dependency>
+```
+
+### Configuration 
+
+The first configuration is setup a config file. I will use the **hibernate.cfg.xml** file as below.
+
+```xml
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+      <property name = "hibernate.dialect">
+         org.hibernate.dialect.MySQLDialect
+      </property>
+      
+      <property name = "hibernate.connection.driver_class">
+         com.mysql.jdbc.Driver
+      </property>
+      
+      <!-- javaSample is the database name -->
+      
+      <property name = "hibernate.connection.url">
+         jdbc:mysql://localhost/javaSample
+      </property>
+      
+      <property name = "hibernate.connection.username">
+         root
+      </property>
+      
+      <property name = "hibernate.connection.password">
+         sql01sql
+      </property>
+      
+      <!-- List of XML mapping files -->
+      <mapping resource = "Persons.hbm.xml"/>
+      
+   </session-factory>
+</hibernate-configuration>
+```
+
+Let's see about those parameters:
+
+| Property | Description |
+| :---      | :---        | 
+| hibernate.dialect | The "language" need to hibernate talk with database" |
+| hibernate.connection.driver_class | The "driver" needed to connect to database |
+| hibernate.connection.url | Database URL | 
+| hibernate.connection.username | Database username |
+| hibernate.connection.password | Database user password |
+
+At the end of the config file we should define the mapping tags with the name of the mapping files
+
+```xml
+<mapping resource = "Persons.hbm.xml"/>
+```
 
