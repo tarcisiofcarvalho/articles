@@ -1,9 +1,11 @@
-### Check Maven version
+# Maven
+
+### Check version
 
 ```sh
 mvn -v
 ```
-### List Maven archetype availables
+### Check archetype availables
 
 ```sh
 mvn archetype:generate
