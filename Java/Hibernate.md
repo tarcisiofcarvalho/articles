@@ -254,7 +254,7 @@ public int add(Persons person){
 		transaction = session.beginTransaction();
 		
 		// Persistence the object and get the ID
-		Integer id = session.save(person);
+		Integer id = (Integer) session.save(person);
 		
 		// Commit the persistence object to the database
 		transaction.commit();
