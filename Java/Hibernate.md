@@ -239,3 +239,40 @@ Let's see an application in details:
 
 ```
 
+#### Defining the save object
+
+```java
+public int add(Persons person){
+	// Opening a session
+	Session session = factory.openSession();
+	
+	// Declaring the transaction object
+	Transaction transaction = null;
+	
+	try{
+		// Opening a transaction for this session
+		transaction = session.beginTransaction();
+		
+		// Persistence the object and get the ID
+		Integer id = session.save(person);
+		
+		// Commit the persistence object to the database
+		transaction.commit();
+		
+		// Return the object's id saved
+		return id;
+		
+	}catch(HibernateException e){
+		// Rollback in case any exception
+		if(transaction!=null)
+			transaction.rollback();
+		
+	}finally{
+		// Always close the session
+		session.close();
+	}
+	
+	// Return -1 in case an exception
+	return -1;
+}
+```
