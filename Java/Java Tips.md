@@ -15,9 +15,9 @@
 * **Java Applet** is designed to transmit the Java code over the internet using Java-Enabled Webbrowser
 
 * **Numeric Promotion** is the promotion of small java primitive types to bigger ones. Example:
--- int to float and long
--- byte, char, short to int
--- long and float to double
+** int to float and long
+** byte, char, short to int
+** long and float to double
 
 * **False sharing** occurs in multi-threading with multi-core system. The processors share the same memory cache, and when one thread change the line in memory cache, the other thread will be impacted.
 
