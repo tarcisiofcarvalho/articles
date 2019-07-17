@@ -42,8 +42,8 @@ docker rm <container>
 # Docker list files on container
 docker exec <container> ls </dir/path>
 
-# Mount volume files between container and docker host
-docker -d -v ~/nginxlogs:/var/log/nginx
+# Mount shared files between container and docker host
+docker run -d -p 80:80 --name webserver -v /folder_on_host:/folder_on_container
 
 # Run sh into container
 sudo docker exec -it <comntainer> /bin/sh
