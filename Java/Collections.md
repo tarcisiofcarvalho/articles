@@ -1,6 +1,6 @@
 # Java Collections
 
-(Under construction)
+(Under construction) Map, HasMap and TreeMap
 
 ### HashMap
 
@@ -25,3 +25,49 @@ while(itr.hasNext()){
   }
 }
 ```
+
+### Iteration
+
+Some ways to iterate over a Map
+
+* Using foreach
+```java
+HashMap<String, String> loans = new HashMap<String, String>();
+loans.put("home loan", "citibank");
+loans.put("personal loan", "Wells Fargo");
+for(String k : loans.keySet()){
+  System.out.println("Key: " + k + " Value: " + loans.get(k));
+}
+```
+
+* Using keySet and Iterator 
+```java
+Set<String> keySet = loans.keySet();
+Iterator<String> it = keySet.iterator();
+while(it.hasNext()){
+  String k = it.next();
+  System.out.println("Key: " + k + " Value: " + loans.get(k));
+}
+```
+
+* Using EntrySet and looping 
+```java
+Set<Map.Entry<String,String>> entrySet = loans.entrySet();
+
+for(Entry entry : entrySet){
+  System.out.println("Key: " + entrySet.getKey() + " Value: " + entrySet.getValue());
+}
+```
+
+* Using EntrySet and Iterator
+```java
+Set<Map.Entry<String,String>> entrySet = loans.entrySet();
+Itertor<Entry<String,String>> it = entrySet.iterator();
+while(it.hasNext()){
+  String entry = it.next();
+  System.out.println("Key: " + entrySet.getKey() + " Value: " + entrySet.getValue());
+}
+```
+
+### References
+https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
