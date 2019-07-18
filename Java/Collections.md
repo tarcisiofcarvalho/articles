@@ -32,6 +32,8 @@ while(itr.hasNext()){
 
 * **HashMap collision**: if two keys have the same hashCode they will be stored in the same bucket
 
+* **HashMap syncronized**: Collections.synchronizedMap(new HashMap<K,V>())
+
 ### Iteration
 
 Some ways to iterate over a Map
@@ -76,6 +78,21 @@ while(it.hasNext()){
   System.out.println("Key: " + entrySet.getKey() + " Value: " + entrySet.getValue());
 }
 ```
+
+### HashSet
+
+It does not allow duplicate values and uses **add** method instead of **put** method. It uses **contain** method to check existence of an object, it is a unique list.
+
+```java
+HashSet<String> set= new HashSet<String>();
+set.add ("first");
+set.add ("second");
+ 
+if(set.contains("first")){
+	System.out.println("first found");
+}
+```
+
 ### Main difference between Hashtable and HashMap
 
 Hashtable is legacy class and is syncronized, the HashMap should be prefered and it is not syncronized, you should implement sync if needed nby yourself.
