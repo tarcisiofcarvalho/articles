@@ -14,6 +14,21 @@
 # Status Server
 ./statusServer.sh
 ```
+### Enable Deployment Monitoring Folder
+
+You can setup Websphere Applicaton Server to automatically deploy WAR/EAR/JAR/SAR products when you move one of them to a monitored folder. Take a look:
+
+* Go to WAS Admin Console
+* Applications > Global deployment settings
+* Enable the "Monitor directory to automatically deploy applications"
+* On Monitoring Directory set your owned path or keep the default
+* Save
+
+After this step, every 5 minutes the WAS will check the following folder
+
+```sh
+<path you provided>/servers/<your server name>/
+```
 
 ### Enable WebSphere in Debug Mode
 
