@@ -12,7 +12,7 @@ It belongs **java.util** and implements **HashTable** data structure.
 
 * **required object**: A HashMap object should have **equals()** (used in retrieve) and **hashcode()** (used in insert) methods.
 
-* **removing an element**
+* **removing an element on a transversing map**
 
 ```java
 Iterator itr = map.entrySet().iterator();
@@ -21,10 +21,16 @@ while(itr.hasNext()){
   Map.Entry current = itr.next();
 
   if(current.getKey().equals("matching"){
-     itr.remove(); // removing the current element
+     itr.remove(); // removing the current element, HasMap has .remove() but doesn't work in a iteration
   }
 }
 ```
+
+* **HashMap order**: Random order, it iteration will be a new order. You can't sort beacaus it is an unordered collection.
+
+* **HashMap count**: size() ot mappingCount() in java8
+
+* **HashMap collision**: if two keys have the same hashCode they will be stored in the same bucket
 
 ### Iteration
 
@@ -70,6 +76,10 @@ while(it.hasNext()){
   System.out.println("Key: " + entrySet.getKey() + " Value: " + entrySet.getValue());
 }
 ```
+### Main difference between Hashtable and HashMap
+
+Hashtable is legacy class and is syncronized, the HashMap should be prefered and it is not syncronized, you should implement sync if needed nby yourself.
+
 
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
