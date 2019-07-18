@@ -30,7 +30,9 @@ while(itr.hasNext()){
 
 Some ways to iterate over a Map
 
-* Using foreach
+![](../images/map_iteration.png)
+
+* Using keySet and looping
 ```java
 HashMap<String, String> loans = new HashMap<String, String>();
 loans.put("home loan", "citibank");
