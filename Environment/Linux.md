@@ -5,5 +5,5 @@
 netstat -vanp tcp | egrep <port number>
 
 # List the latest file in a folder
-ls -l | tail -1
+ls -1l | tail -1
 ```
