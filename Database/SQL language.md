@@ -38,3 +38,12 @@ WHERE id=1;
 DELETE FROM Persons 
 WHERE id=1;
 ```
+
+### Comments
+
+```sql
+/* one line comment in DB2 */
+/*
+* multiline comment in DB2
+*/
+```
