@@ -109,6 +109,16 @@ if(set.contains("first")){
 
 Hashtable is legacy class and is syncronized, the HashMap should be prefered and it is not syncronized, you should implement sync if needed nby yourself.
 
+### Remove duplicated objects from an ArrayList
+
+Copy the **ArrayLit** to a **Set** that keeps the elements order as **LinkedHashSet**
+
+```java
+List<Integer> arrayList = new ArrayList<Integer>();
+Set<Integer> set = new LinkedHashSet<Integer>(arrayList);
+arrayList.clear();
+arrayList.addAll(set);
+```
 
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
