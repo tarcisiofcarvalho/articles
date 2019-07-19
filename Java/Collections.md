@@ -114,3 +114,4 @@ Hashtable is legacy class and is syncronized, the HashMap should be prefered and
 
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
+http://www.javapractices.com/topic/TopicAction.do?Id=65
