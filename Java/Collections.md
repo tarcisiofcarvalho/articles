@@ -2,6 +2,20 @@
 
 (Under construction) Map, HasMap and TreeMap
 
+Collections overview
+
+![](../images/collections.png)
+
+Null and duplicated objects:
+* Set: Unique objects, not null objects
+* List: Duplicated objects, null objects
+* Map: Not duplicated keys, duplicated values
+
+Ordering:
+* HashSet/HashMap: unordered
+* LinkedHashSet/LinkedList/LinkedHashMap: insertion order
+* TreeSet/TreeMap: ascending order
+
 ### HashMap
 
 It belongs **java.util** and implements **HashTable** data structure.
