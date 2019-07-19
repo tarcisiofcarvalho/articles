@@ -1,7 +1,5 @@
 # Java Collections
 
-(Under construction) Map, HasMap and TreeMap
-
 Collections overview
 
 ![](../images/collections.png)
