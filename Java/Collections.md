@@ -119,7 +119,30 @@ Set<Integer> set = new LinkedHashSet<Integer>(arrayList);
 arrayList.clear();
 arrayList.addAll(set);
 ```
+### Reverse a List
+
+You can use the java.util.Collections, reverse function. It's complexity of O(n):
+```java
+ArrayList<Integer> arrayList = new ArrayList<Integer>();
+
+Collections.reverse(arrayList);
+```
+
+### Sort a List
+
+
+```java
+ArrayList<Integer> arrayList = new ArrayList<Integer>();
+ 
+//Ascending order
+Collections.sort(arrayList);
+ 
+//Descending order
+Collections.sort(arrayList, Collections.reverseOrder());
+```
 
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
 http://www.javapractices.com/topic/TopicAction.do?Id=65
+https://howtodoinjava.com/sort/collections-sort/
+
