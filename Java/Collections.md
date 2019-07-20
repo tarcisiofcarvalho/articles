@@ -162,6 +162,46 @@ The normal complexity in an ArrayList search is O(n), but when this array list s
 
 In most of cases the ArrayList is a better choice than Linked list, except if you use much the **add** operation, so the complexity of LinkedList to add an element is less than ArrayList list that need to resize the array and the complexity changes to O(log(n))
 
+### ArrayList x Vector
+
+The main difference is that Vector is synchronized and thread-safe. See below Vector construction:
+
+```java
+// Creating a empty vector with size 10
+Vector<Integer> vector1 = new Vector<Integer>(); 
+
+// Creating a vector from a collection
+Vector<Integer> vector1 = new Vector(Collection<? extends E>); 
+
+// Creating a vector with specific size 15
+Vector<Integer> vector1 = new Vector<Integer>(15); 
+
+// Creating a vector with specific size 15 and increments of 2
+Vector<Integer> vector1 = new Vector<Integer>(15,2); 
+
+```
+
+### Create an ArrayList from array in a simple way
+
+```java
+List<String> coolStringList = Arrays.asList("John", "Paul", "Loriee");
+```
+
+### ArrayList - sub array list
+
+```java
+List<String> list = arrayList.subList(1,5); // Sub array list from 1 to 5 position
+
+```
+
+### CopyOnWriteArrayList
+
+It is a thread safe list with no synchronization needed. It is nit able to remove an element during an iterator loop.
+
+```java
+CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();
+
+```
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
 http://www.javapractices.com/topic/TopicAction.do?Id=65
