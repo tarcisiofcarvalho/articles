@@ -140,7 +140,7 @@ Collections.sort(arrayList);
 Collections.sort(arrayList, Collections.reverseOrder());
 ```
 
-### 
+### Synchornized List
 
 List interface is not synchronized, you can create the a List/ArrayList using the Collections.synchronizedList() and. synchronized()
 
@@ -153,6 +153,14 @@ List list = Collections.synchronizedList(new ArrayList());
           foo(i.next()); // Some action
  }
 ```
+
+### Complexity in case a ArrayList resize
+
+The normal complexity in an ArrayList search is O(n), but when this array list should be resized the complexity chasnges to O(log(n))
+
+### ArrayList x LinkedList
+
+In most of cases the ArrayList is a better choice than Linked list, except if you use much the **add** operation, so the complexity of LinkedList to add an element is less than ArrayList list that need to resize the array and the complexity changes to O(log(n))
 
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
