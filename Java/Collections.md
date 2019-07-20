@@ -130,7 +130,6 @@ Collections.reverse(arrayList);
 
 ### Sort a List
 
-
 ```java
 ArrayList<Integer> arrayList = new ArrayList<Integer>();
  
@@ -141,8 +140,23 @@ Collections.sort(arrayList);
 Collections.sort(arrayList, Collections.reverseOrder());
 ```
 
+### 
+
+List interface is not synchronized, you can create the a List/ArrayList using the Collections.synchronizedList() and. synchronized()
+
+```java
+List list = Collections.synchronizedList(new ArrayList());
+
+  synchronized(list) {
+      Iterator i = list.iterator();
+      while (i.hasNext())
+          foo(i.next()); // Some action
+ }
+```
+
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
 http://www.javapractices.com/topic/TopicAction.do?Id=65
 https://howtodoinjava.com/sort/collections-sort/
+https://www.java67.com/2014/12/how-to-synchronize-arraylist-in-java.html
 
