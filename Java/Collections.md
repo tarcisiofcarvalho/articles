@@ -202,6 +202,23 @@ It is a thread safe list with no synchronization needed. It is nit able to remov
 CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<String>();
 
 ```
+
+### Removing Objects from a ArrayList
+
+```java
+list.remove("John"); // Object
+list.remove(1); //Index
+
+while(it.hasNext()){
+	it.remove(); // Removing using iterator
+}
+```
+
+### Creating a Read-only array list 
+
+```java
+ArrayList<String> list = Collections.unmodifiableCollection(new ArrayList<String>());
+```
 ### References
 https://javarevisited.blogspot.com/2011/12/how-to-traverse-or-loop-hashmap-in-java.html
 http://www.javapractices.com/topic/TopicAction.do?Id=65
