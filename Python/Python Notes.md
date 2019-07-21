@@ -209,10 +209,13 @@ x = 'a'
 o = ord(x)
 ```
 
-
 * Object to regex
 ```python
 x = "..."
 y = repr(x)
 ```
+
+### Operators
+
+* '**': Exponetial power
 
