@@ -2,6 +2,37 @@
 
 Some Python language considerations
 
+### Python Memory Management
+
+Python memory is managed by Python private heap space
+
+### Iterator
+
+```python
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+```
+### Clone object
+
+```python
+import copy
+
+x = copy.copy(y)
+z = copy.deepcoy(mydict)
+
+```
+
+### Find bugs or perform static analysis
+
+PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
+
 ### Consideration about Python modules import 
 
 As a script language Python execute all imported modules conditions, constants, looping, etc, it is useful, but you can broke your code if you assign a value by mistake to a variable declared at a module level, etc.
@@ -45,6 +76,8 @@ https://www.tutorialspoint.com/python/python_interview_questions
 
 ### String
 
+String is immutable
+
 * Array: every string in python is an array
 ```python
 x = 'test'
@@ -66,6 +99,95 @@ x = x * 2
 print x
 >>> testtest
 ```
+
+* Caps letter
+```python
+x = "tarcisio"
+print x.capitalize()
+>>> Tarcisio
+```
+
+* All char is a number
+```python
+x = "12345"
+print x.isalnum()
+>>> True
+```
+* All char is a digit
+```python
+x = "Test"
+print x.isdigt()
+>>> False
+```
+* All char is space
+```python
+x = "     "
+print x.isspace()
+>>> True
+```
+
+* Text is titlecased
+```python
+x = "Test Number One"
+print x.istitle()
+>>> True
+```
+
+* Text is uppercase
+```python
+x = "Test Number One"
+print x.uppercase()
+>>> False
+```
+
+* All char is lower case
+```python
+x = "Test"
+print x.islower()
+>>> False
+```
+
+* Merge 
+```python
+x = ' '.join(x,y,z)
+```
+
+* Len
+```python
+print len(x)
+```
+
+* Convert to lower and upper case
+```python
+print x.lower() # Use upper instead
+```
+
+* Max and Min char
+```python
+string = "raj" 
+print max(string) # Use min instead
+>>> r
+```
+
+* Strip landing white spaced
+```python
+string = " Tarcisio "
+print string.strip(' ') # Performs both lstrip() and rstrip() on string.
+```
+
+* Change lettercases
+```python
+string = " Tarcisio "
+print string.swapcase(' ') # Performs both lstrip() and rstrip() on string.
+>>> tARCISIO
+```
+
+* Change to Titlecase
+```python
+string = " tarcisio "
+print string.title()
+>>> Tarcisio
+
 ### List
 
 * Enclosed by [] brackets
@@ -218,4 +340,33 @@ y = repr(x)
 ### Operators
 
 * '**': Exponetial power
+* '//': Floor Division (5.0 // 2 >> 2.0)
+* 'in': Both variables point to the same object (x is y >> true)
+* 'not': 
+
+### Statements
+
+* **continue**: break the current iteration and move to the next
+* **break**: stop the iterations
+* **pass**: do nothing, it means you will code it later
+* **lambda**: creates an anonymous function. ( x = lambda param : param + 10 >>> x(20) >>> 30 )
+
+### Random values
+
+* **choice**: Get a random value from a list (x = choice(list))
+* **randrange(start,stop,step)**: Get a random from a range (random.randrange(100, 1000, 2))
+* **random**: Get a random float number between 0 and 1
+* **seed**: Specify a seed (random.seed(30))
+* **shuffle**: Randomize a list (random.shuffle(list))
+
+### Where python stores the functions
+
+Stack memory
+
+### Doble data type
+
+Python has no double data type
+
+
+
 
