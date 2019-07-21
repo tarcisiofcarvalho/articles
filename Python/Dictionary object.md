@@ -31,6 +31,22 @@ Second way:
 x = my_dict.get['a']
 ```
 
+#### Adding dictionary members
+
+First way:
+
+```python
+my_dict = {}
+my_dict['a'] = 'first element value'
+```
+
+Second way:
+
+```python
+my_dict = {'a','first element value'}
+```
+
+
 #### Iterate over a dictionary
 
 First way, getting both keys (x) and values (y)
@@ -52,4 +68,16 @@ Third way, getting the member object:
 ```python
 for x in my_dict:
 	print(x)
+```
+
+#### Get all keys
+
+```python
+print my_dict.keys()
+```
+
+#### Get all values
+
+```python
+print my_dict.values()
 ```
