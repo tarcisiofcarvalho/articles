@@ -6,4 +6,7 @@ netstat -vanp tcp | egrep <port number>
 
 # List the latest file in a folder
 ls -1l | tail -1
+
+# Uncompress WAR file
+jar -xf <war file>
 ```
