@@ -51,6 +51,34 @@ On your Eclipse go to project properties:
 * Host, put your WebSphere host IP
 * Port, put 8888.
 
+### Check JVM version running on Websphere Application Server
+
+Go to your server logs folder, as example below:
+
+```sh
+cd opt/IBM/WebSphere/AppServer/profiles/AppSrv01/logs/server1
+```
+
+Execute head command on native_stdout.log or systemOut.log file:
+
+```sh
+head native_stdout.log
+```
+
+You will see message as below where you can check the Java version:
+
+```sh
+************ Start Display Current Environment ************
+WebSphere Platform 9.0.5.0 [BASE 9.0.5.0 f5001923.01] [JAVA8 8.0.5.37 pxa6480sr5fp37-20190618_01] running with process name DefaultCell01\DefaultNode01\server1 and process id 660
+Full server name is DefaultCell01\DefaultNode01\server1-660
+Host Operating System is Linux, version 4.9.125-linuxkit
+Java version = 1.8.0_211, Java Runtime Version = 8.0.5.37 - pxa6480sr5fp37-20190618_01(SR5 FP37), Java Compiler = j9jit29, Java VM name = IBM J9 VM
+was.install.root = /opt/IBM/WebSphere/AppServer
+user.install.root = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01
+Java Home = /opt/IBM/WebSphere/AppServer/java/8.0/jre
+ws.ext.dirs = /opt/IBM/WebSphere/AppServer/java/8.0/lib:/opt/IBM/WebSphere/AppServer/profiles/AppSrv01/classes:/opt/IBM/WebSphere/AppServer/classes:/opt/IBM/WebSphere/AppServer/lib:/opt/IBM/WebSphere/AppServer/installedChannels:/opt/IBM/WebSphere/AppServer/lib/ext:/opt/IBM/WebSphere/AppServer/web/help:/opt/IBM/WebSphere/AppServer/deploytool/itp/plugins/com.ibm.etools.ejbdeploy/runtime
+Classpath = /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties:/opt/IBM/WebSphere/AppServer/properties:/opt/IBM/WebSphere/AppServer/lib/startup.jar:/opt/IBM/WebSphere/AppServer/lib/bootstrap.jar:/opt/IBM/WebSphere/AppServer/lib/jsf-nls.jar:/opt/IBM/WebSphere/AppServer/lib/lmproxy.jar:/opt/IBM/WebSphere/AppServer/lib/urlprotocols.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batchboot.jar:/opt/IBM/WebSphere/AppServer/deploytool/itp/batch2.jar:/opt/IBM/WebSphere/AppServer/java/8.0/lib/tools.jar
+```
 ### References
 
 (https://www.mkyong.com/websphere/remote-debugging-with-eclipse-websphere-7/)
