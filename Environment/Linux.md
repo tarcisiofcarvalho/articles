@@ -10,6 +10,9 @@ ls -1l | tail -1
 # Uncompress WAR file
 jar -xf <war file>
 
+# Compress with tar
+tar -cvf <filename>.tar <directory>
+
 # Create multiple directories
 mkdir -p /folder1/folder2/folder3
 
