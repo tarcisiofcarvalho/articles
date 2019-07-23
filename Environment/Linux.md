@@ -12,4 +12,7 @@ jar -xf <war file>
 
 # Create multiple directories
 mkdir -p /folder1/folder2/folder3
+
+# Bash with trace
+bash -x <script file name>
 ```
