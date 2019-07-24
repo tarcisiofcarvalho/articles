@@ -24,4 +24,7 @@ sleep <seconds>
 
 # Remove carriage returns and control-z characters from windows file
 tr -d '\15\32' < winfile.txt > unixfile.txt
+
+# Find files that contains a given text
+grep -iRl "your-text-to-find" ./
 ```
