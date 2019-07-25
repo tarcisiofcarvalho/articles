@@ -2,7 +2,7 @@
 
 DevOps is a methodology with the main objective to automate software development phase, building a bridge between development and operations tem/environment
 
-Some statments:
+### Statements:
 
 * Software Enginnering practice 
 * Automation and Monitoring of Software Development Implementation phases and operational process
@@ -12,15 +12,18 @@ Some statments:
 * Puppet é uma ferramenta declarativa, projetada para gerenciar a configuração de Unix-compativeis e Microsoft Windows.
 * Continuous Integration (Jenkins) e infrastructure as code (Puppet)
 
-DevOps base:
+### Foundations:
 * Utilization of Agile Methodologies
 * High software development demands
 * High cloud infrastructure availability
 * High data center demand and setup management tools
+
+### Cycle
 
 ![](../images/devops-cycle.png)
 
 ### References
 
 https://guide.freecodecamp.org/devops/
+https://pt.wikipedia.org/wiki/DevOps#cite_note-1
 
