@@ -2,7 +2,7 @@
 
 DevOps is a methodology with the main objective to automate the software development phase, building a bridge between development and operations teams/environments
 
-![](../images/devops-division.png)
+![](../images/devops.png)
 
 ### Statements:
 
