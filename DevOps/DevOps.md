@@ -27,5 +27,6 @@ DevOps is a methodology with the main objective to automate the software develop
 ### References
 
 https://guide.freecodecamp.org/devops/
+
 https://pt.wikipedia.org/wiki/DevOps#cite_note-1
 
