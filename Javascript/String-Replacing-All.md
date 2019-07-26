@@ -19,7 +19,11 @@ There are more ways to replace all occurrences, the suggestion below looks like 
 ```javascript
 var my_str = "& I love my car &";
 
+// Replace just one char
 my_str.replace(/[&]/g," ");
+
+// Replace a word with more than one char
+my_str.replace(/(test)/g," "); 
 
 ```
 To replace all we are using *regex* in the first argument of the replace function. The char **g** means (global), then the char **&** will be replaced globally in the string.
