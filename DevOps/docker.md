@@ -47,6 +47,9 @@ docker run -d -p 80:80 --name webserver -v /folder_on_host:/folder_on_container
 
 # Run sh into container
 sudo docker exec -it <comntainer> /bin/sh
+
+# Check logs online
+docker logs --follow ContainerName/ContainerID
 ```
 ### Docker Toolkit
 
