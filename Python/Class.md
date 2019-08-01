@@ -105,6 +105,28 @@ class className:
     self.instanceAttribute = 1
 ```
 
+### Instance, Class and Static methods
+
+```python
+
+class MyClass:
+  def instanceMethod(self):
+    """ It is an instance method that is related to self (Object) """
+    return "instance method", self
+  
+  @classmethod
+  def classMethod(cls):
+    """ It is a class method that is has no visibility to the instance self (Object), just class itself """
+    return "instance method", cls
+    
+  @staticthod
+  def staticMethod():
+    """ It does not have access to class (cls) or instance (self). It belongs to a class namespace but work as a regurlar function """
+    return "static method"    
+
+
+```
+
 ### References
 
 https://www.tutorialspoint.com/python/python_classes_objects
