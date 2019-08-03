@@ -1,4 +1,6 @@
-# Linux/Mac commands
+# Linux/Mac
+
+## Commands
 
 ```sh
 # Check ports in use
@@ -28,3 +30,6 @@ tr -d '\15\32' < winfile.txt > unixfile.txt
 # Find files that contains a given text
 grep -iRl "your-text-to-find" ./
 ```
+## Definitions
+
+* PPA: It's the Personal Package Archive for Ubuntu distributions where you can create your own archive and users can install your packagers using the apt.
