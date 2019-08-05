@@ -18,8 +18,16 @@
 ./syncNode.sh
 
 # Start Web Console
-# from AppSvr/bin
+# from AppServer/bin
 ./startManager.sh
+```
+
+### Kill WebSphere Process
+```sh
+ps -aux | grep WebSphere
+
+# Get the WebSphere processes ID
+kill <processID>
 ```
 ### Enable Deployment Monitoring Folder
 
