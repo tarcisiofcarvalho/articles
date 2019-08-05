@@ -16,6 +16,10 @@
 
 # SyncNode
 ./syncNode.sh
+
+# Start Web Console
+# from AppSvr/bin
+./startManager.sh
 ```
 ### Enable Deployment Monitoring Folder
 
