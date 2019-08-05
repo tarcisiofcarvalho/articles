@@ -13,6 +13,9 @@
 
 # Status Server
 ./statusServer.sh
+
+# SyncNode
+./syncNode.sh
 ```
 ### Enable Deployment Monitoring Folder
 
