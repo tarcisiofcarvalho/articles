@@ -3,6 +3,9 @@
 ### Commands
 
 ```sh
+# Start the HTTP server
+sudo </HTTPServerDir>/bin/apachectl -k start
+
 # Stop the HTTP server
 sudo </HTTPServerDir>/bin/apachectl -k stop
 
