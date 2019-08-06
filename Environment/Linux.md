@@ -36,6 +36,9 @@ grep -iRl "your-text-to-find" ./
 ```sh
 # Go to last file line
 <ESC> GA
+
+# Search
+<ESC>/
 ```
 ## Definitions
 
