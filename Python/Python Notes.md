@@ -29,6 +29,15 @@ z = copy.deepcoy(mydict)
 
 ```
 
+### Lambda function
+
+```python
+add = lambda x, y: x+y
+
+add(5,4)
+9
+```
+
 ### Find bugs or perform static analysis
 
 PyChecker is a static analysis tool that detects the bugs in Python source code and warns about the style and complexity of the bug. Pylint is another tool that verifies whether the module meets the coding standard.
@@ -61,10 +70,6 @@ print id(x)
 * PYTHONPATH: Where the Python locate module files imported into a program
 * PYTHONSTARTUP: It contains the path of an initialization file containing Python source code.
 * PYTHONHOME: It is usually embedded in the PYTHONSTARTUP or PYTHONPATH directories to make switching module libraries easy.
-
-### References
-
-https://www.tutorialspoint.com/python/python_interview_questions
 
 ### Python datatypes supported
 
@@ -368,5 +373,6 @@ Stack memory
 Python has no double data type
 
 
+### References
 
-
+https://www.tutorialspoint.com/python/python_interview_questions
