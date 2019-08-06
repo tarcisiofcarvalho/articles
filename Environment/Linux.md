@@ -29,6 +29,10 @@ tr -d '\15\32' < winfile.txt > unixfile.txt
 
 # Find files that contains a given text
 grep -iRl "your-text-to-find" ./
+
+# Check ports
+sudo lsof -i -P -n
+netstat -tulpn
 ```
 
 ### Vi editor
