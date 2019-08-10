@@ -1,4 +1,4 @@
-# C++ Structure
+# C++ Architecture
 
 ### Header file
 
