@@ -33,6 +33,9 @@ grep -iRl "your-text-to-find" ./
 # Check ports
 sudo lsof -i -P -n
 netstat -tulpn
+
+# List USB devices
+lsusb
 ```
 
 ### Vi editor
