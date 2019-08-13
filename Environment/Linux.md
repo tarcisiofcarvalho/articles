@@ -36,6 +36,10 @@ netstat -tulpn
 
 # List USB devices
 lsusb
+
+# Force kill
+
+kill -9 <PID>
 ```
 
 ### Vi editor
