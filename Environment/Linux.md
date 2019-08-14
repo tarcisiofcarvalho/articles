@@ -40,6 +40,12 @@ lsusb
 # Force kill
 
 kill -9 <PID>
+
+# check Ubuntu version
+lsb_release -a
+
+# check linux version
+uname -a
 ```
 
 ### Vi editor
