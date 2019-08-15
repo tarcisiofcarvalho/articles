@@ -48,6 +48,10 @@ lsb_release -a
 uname -a
 ```
 
+### Linux file system definition
+
+https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+
 ### Vi editor
 
 ```sh
