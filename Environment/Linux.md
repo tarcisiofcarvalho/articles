@@ -52,6 +52,10 @@ uname -a
 
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 
+### Linux /boot (full size)
+
+https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600
+
 ### Vi editor
 
 ```sh
