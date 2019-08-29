@@ -49,6 +49,9 @@ lsb_release -a
 
 # check linux version
 uname -a
+
+# watch the newest file with tail
+watch “ls -t1 <filename> | sed q | xargs tail -300”
 ```
 
 ### Linux file system definition
