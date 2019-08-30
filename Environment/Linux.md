@@ -52,6 +52,9 @@ uname -a
 
 # watch the newest file with tail
 watch “ls -t1 <filename> | sed q | xargs tail -300”
+
+# Find and replace text in file(s)
+sed -i 's/old-text/new-text/g' file(s)
 ```
 
 ### Linux file system definition
