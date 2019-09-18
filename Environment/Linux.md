@@ -74,6 +74,6 @@ https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600
 # Search
 <ESC>/
 ```
-## Definitions
+## Definitions 
 
 * PPA: It's the Personal Package Archive for Ubuntu distributions where you can create your own archive and users can install your packagers using the apt.
