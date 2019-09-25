@@ -49,6 +49,7 @@ lsb_release -a
 
 # check linux version
 uname -a
+cat /etc/*-release
 
 # watch the newest file with tail
 watch “ls -t1 <filename> | sed q | xargs tail -300”
