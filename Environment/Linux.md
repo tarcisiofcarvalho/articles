@@ -57,6 +57,8 @@ watch “ls -t1 <filename> | sed q | xargs tail -300”
 # Find and replace text in file(s)
 sed -i 's/old-text/new-text/g' file(s)
 ```
+# Check memory
+free
 
 ### Linux file system definition
 
