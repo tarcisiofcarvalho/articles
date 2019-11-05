@@ -59,6 +59,9 @@ sed -i 's/old-text/new-text/g' file(s)
 
 # Check memory
 free
+
+# Check process with ps when you have ps aux truncated
+ps -eo args
 ```
 
 ### Linux file system definition
