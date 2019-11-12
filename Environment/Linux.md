@@ -62,7 +62,25 @@ free
 
 # Check process with ps when you have ps aux truncated
 ps -eo args
+
+# Check default umask
+umask
+
+# Set umask default
+umask 022 # example
+
 ```
+
+### Linux chmod and umask option
+
+0 – ler, escrever e executar
+1 – ler e escrever
+2 – ler e executar
+3 – somente ler
+4 – escrever e executar
+5 – somente escrever
+6 – somente executar
+7 – sem permissões
 
 ### Linux file system definition
 
@@ -71,6 +89,8 @@ https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
 ### Linux /boot (full size)
 
 https://gist.github.com/ipbastola/2760cfc28be62a5ee10036851c654600
+
+
 
 ### Vi editor
 
