@@ -61,7 +61,7 @@ sed -i 's/old-text/new-text/g' file(s)
 free
 
 # Check process with ps when you have ps aux truncated
-ps -eo args
+ps -ef
 
 # Check default umask
 umask
