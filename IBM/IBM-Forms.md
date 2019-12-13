@@ -18,3 +18,8 @@ for(var i=0; i<actions.length; i++){
    }
 }
 ```
+
+#### Get current stage
+```javascript
+if(BO.F_CurrentStage === 'Start'){};
+```
