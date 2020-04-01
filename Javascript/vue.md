@@ -32,3 +32,21 @@ first, set the reference:
 ```javascript
 axios.get(url).then(response => (x=response.data)
 ```
+
+### Vue component
+
+```javascript
+Vue.component('component-tag', {
+
+    props: ['name'],
+    template: `
+               <tr>
+                    <td>{{ name }}</td>
+                    <td>
+                        <button type="button" class="ds-icon-close" v-on:click="this.app.removeDistUser(name)"/>
+                    </td>
+               </tr>
+               `,
+
+})
+```
