@@ -47,6 +47,16 @@ my_dict = {'a','first element value'}
 ```
 
 
+#### Remove dictionary member
+
+```python
+my_dict = {}
+my_dict['a'] = 'first element value'
+
+del my_dict['a']
+
+```
+
 #### Iterate over a dictionary
 
 First way, getting both keys (x) and values (y)
