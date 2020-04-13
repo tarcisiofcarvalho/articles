@@ -19,7 +19,7 @@ Vue.set(object, member, value);
 Vue.delete(object, member);
 ```
 
-### API call
+### REST Request
 
 Using axio library for api call.
 
@@ -31,6 +31,20 @@ first, set the reference:
 
 ```javascript
 axios.get(url).then(response => (x=response.data)
+```
+
+### REST Request with body data
+
+```javascript
+        var body = {
+              'approver': approver
+        };
+        axios({
+          method: 'post',
+          url: '/your_url',
+          data: body,
+          headers: {'Content-Type': 'application/json'}
+        }).then(response => (alert(response.status)));
 ```
 
 ### Vue component
