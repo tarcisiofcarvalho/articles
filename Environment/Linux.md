@@ -71,6 +71,10 @@ umask 022 # example
 
 # Get last system reboot
 who -b
+
+# List devices connected
+# dmesg (diagnostic message)
+dmesg
 ```
 
 ### Linux chmod and umask option
